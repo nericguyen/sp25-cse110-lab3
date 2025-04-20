@@ -1,0 +1,55 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Short Box Definitons */
+.shortbox {
+    text-align: center;
+    background-color: #00629B;
+    width: 600px;
+    height: 30px;
+
+    margin: auto;
+    padding: 30px;
+    border: 5px inset #FFCD00;
+    border-radius: 20px;
+}
+
+/* Long Box Definitions */
+.longbox {
+    /* Long Padding Definitions */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    /* Long Margin Definitions */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    /* Long Border Definitions*/
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+
+    border-top-style: ridge;
+    border-bottom-style: solid;
+    border-left-style: ridge;
+    border-right-style: solid;
+
+    border-top-color: #FFCD00;
+    border-bottom-color: black;
+    border-left-color: #FFCD00;
+    border-right-color: black;
+
+    border-radius: 20px;
+
+    /* Other Definitions */
+    text-align: center;
+    background-color: #00629B;
+    width: 130px;
+    height: 30px;
+}
