@@ -62,21 +62,17 @@ body{
 
     border-radius: 20px;
 
+    /* Wider Gamut Colors */
+    border-top-color: #FFCD00;
+    border-bottom-color: color(srgb 0 0 1);
+    border-left-color: #FFCD00;
+    border-right-color: color-mix(in srgb, plum, #f00);
+
     /* Other Definitions */
     text-align: center;
     background-color: hsla(205 83% 30% / 0.62);
     width: 150px;
     height: 30px;
-}
-
-@media (color-gamut: srgb) {
-    .longbox {
-        /* Wider Gamut Colors */
-        border-top-color: #FFCD00;
-        border-bottom-color: color(srgb 0 0 0);
-        border-left-color: #FFCD00;
-        border-right-color: color-mix(in srgb, plum, #f00);
-    }
 }
 
 .agendabox {
