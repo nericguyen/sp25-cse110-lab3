@@ -60,12 +60,6 @@ body{
     border-left-style: ridge;
     border-right-style: solid;
 
-    /* Wider Gamut Colors */
-    border-top-color: #FFCD00;
-    border-bottom-color: color(srgb 1 1 1);
-    border-left-color: #FFCD00;
-    border-right-color: color-mix(in srgb, plum, #f00);
-
     border-radius: 20px;
 
     /* Other Definitions */
@@ -73,6 +67,16 @@ body{
     background-color: hsla(205 83% 30% / 0.62);
     width: 150px;
     height: 30px;
+}
+
+@media (color-gamut: srgb) {
+    .longbox {
+        /* Wider Gamut Colors */
+        border-top-color: #FFCD00;
+        border-bottom-color: color(srgb 0 0 0);
+        border-left-color: #FFCD00;
+        border-right-color: color-mix(in srgb, plum, #f00);
+    }
 }
 
 .agendabox {
