@@ -93,6 +93,17 @@
     font-size: 150%;
 }
 
+/* Attendance names have an inline display */
 .attendance-inline li {
     display: inline;
+}
+
+/* The attendance names will turn blue when you hover over them */
+.attendance-inline li:hover {
+    color:blue;
+}
+
+/* The button text turns red when you click it */
+.submit-button:active {
+    color: red;
 }
