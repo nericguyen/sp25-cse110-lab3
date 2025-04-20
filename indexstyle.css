@@ -1,8 +1,9 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    body{
-        background-color: #00629B;
-    }
+}
+
+body{
+    background-color: #00629B;
 }
 
 .ucsdlogo {
@@ -61,9 +62,9 @@
 
     /* Wider Gamut Colors */
     border-top-color: #FFCD00;
-    border-bottom-color: color(srgb 0 0 0);
+    border-bottom-color: color(srgb 1 1 1);
     border-left-color: #FFCD00;
-    border-right-color: color-mix(in hsl, hsl(247, 57%, 75%), black);
+    border-right-color: color-mix(in hsl, hsl(247, 57%, 75%), salmon);
 
     border-radius: 20px;
 
