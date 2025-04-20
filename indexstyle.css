@@ -64,7 +64,7 @@ body{
     border-top-color: #FFCD00;
     border-bottom-color: color(srgb 1 1 1);
     border-left-color: #FFCD00;
-    border-right-color: color-mix(in hsl, hsl(247, 57%, 75%), salmon);
+    border-right-color: color-mix(in srgb, plum, #f00);
 
     border-radius: 20px;
 
