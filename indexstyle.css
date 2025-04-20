@@ -2,12 +2,25 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.ucsdlogo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    border: 3px solid #000000;
+}
+
 /* Short Box Definitons */
 .shortbox {
+    position: sticky;
+    top: 0;
+
     text-align: center;
     background-color: #00629B;
     width: 8in;
+    max-width: 10in;
     height: 1cm;
+    max-height: 3cm;
 
     margin: auto;
     padding: 30px;
@@ -56,6 +69,7 @@
 }
 
 .agendabox {
+    display: block;
     width: 5in;
     height: auto;
 
@@ -77,4 +91,8 @@
 
 .list-percent li {
     font-size: 150%;
+}
+
+.attendance-inline li {
+    display: inline;
 }
