@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="indexstyle.css">
 
+    <!-- Used for the browser icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -44,7 +45,7 @@
 
         <h2 id="agenda" class="longbox">Agenda</h2>
 
-        <section>
+        <section class="agendabox">
             <h3>12:00pm - Community Service for Recreational Clubs</h3>
 
             <p>Harrison says that people <em>must</em> come to Library Walk at noon.</p>
@@ -52,7 +53,7 @@
 
             <h5>Unfinished Business</h5>
             
-            <ul>
+            <ul class="list-percent">
                 <li>Vests have finally been purchased</li>
             </ul>
             <img 
@@ -63,12 +64,12 @@
 
             <h5>New Business</h5>
 
-            <ul>
+            <ul class="list-percent">
                 <li>Remember to meet in front of Geisel on Library Walk</li>
             </ul>
         </section>
 
-        <section>
+        <section class="agendabox">
             <h3>12:30pm - Tournament prizes</h3>
 
             <p>Jared will be sending emails to the Top 3 for <strong>Smash Ultimate</strong> tomorrow.</p>
@@ -76,7 +77,7 @@
 
             <h5>Unfinished Business</h5>
             
-            <ul>
+            <ul class="winner-ems">
                 <li>Winners have been announced</li>
                 <li>1st: Nacho</li>
                 <li>2nd: Erkle</li>
@@ -85,7 +86,7 @@
 
             <h5>New Business</h5>
 
-            <ul>
+            <ul class="new-business-rems">
                 <li>Jared send the emails ASAP please</li>
                 <li>Prizes are all PDP controllers such as this</li>
             </ul>
@@ -103,9 +104,11 @@
         <h2 id="recordings" class="longbox">Recordings</h2>
 
         <section>
-            <h4>Video:</h4>
-            <video controls muted src="video1576915457.mp4" width="400"></video>
-            <p>There was a fight between the president and vice president and it got physical.</p>
+            <video controls muted width="400">
+                <source src="video1576915457.mp4">
+                This browser cannot load the video. <!-- Variable Fallback -->
+            </video>
+            <p>ALT: There was a fight between the president and vice president and it got physical.</p>
         </section>
 
         <section>
