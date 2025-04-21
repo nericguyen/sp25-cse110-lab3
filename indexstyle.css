@@ -62,17 +62,25 @@ body{
 
     border-radius: 20px;
 
-    /* Wider Gamut Colors */
     border-top-color: #FFCD00;
-    border-bottom-color: color(srgb 0 0 1);
+    border-bottom-color: black;
     border-left-color: #FFCD00;
-    border-right-color: color-mix(in srgb, plum, #f00);
+    border-right-color: black;
 
     /* Other Definitions */
     text-align: center;
     background-color: hsla(205 83% 30% / 0.62);
     width: 150px;
     height: 30px;
+}
+
+/* Wider Gamut Colors */
+i {
+    background-color: color(srgb 0.75 0.76 0.38);
+}
+
+b {
+    background-color: color-mix(in srgb, plum, #f00);
 }
 
 .agendabox {
