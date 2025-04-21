@@ -76,11 +76,11 @@ body{
 
 /* Wider Gamut Colors */
 i {
-    background-color: color(srgb 0.75 0.76 0.38);
+    background-color: color(xyz 45 20 0);
 }
 
 b {
-    background-color: color-mix(in srgb, plum, #f00);
+    background-color: color-mix(in srgb, red, #000000);
 }
 
 .agendabox {
