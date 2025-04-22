@@ -87,6 +87,65 @@ body{
     border-radius: 20px;
 }
 
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: auto;
+    height: auto;
+
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    border: 5px inset rgb(198, 146, 20);
+    border-radius: 20px;
+}
+
+.gridbox {
+    display: grid;
+    grid-template-columns: [first] 200px [line2] 200px [line3] auto [col4-start] 300px [five] 300px [end];
+    grid-template-rows: [row1-start] 200px [row1-end] 200px [third-line] 200px [fourth-line];
+    justify-items: end;
+
+    width: auto;
+    height: auto;
+
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    border: 5px inset rgb(198, 146, 20);
+    border-radius: 20px;
+}
+
+.k1 {
+    grid-column-start: first;
+    grid-column-end: line2;
+    grid-row-start: row1-start;
+    grid-row-end: row1-end;
+}
+.k2 {
+    grid-column-start: first;
+    grid-column-end: line2;
+    grid-row-start: third-line;
+    grid-row-end: last-line;
+}
+.k3 {
+    grid-column-start: five;
+    grid-column-end: end;
+    grid-row-start: row1-start;
+    grid-row-end: row1-end;
+}
+.k4 {
+    grid-column-start: five;
+    grid-column-end: end;
+    grid-row-start: third-line;
+    grid-row-end: last-line;
+}
+
 .winner-ems li {
     font-size: 1.5em;
 }
@@ -122,4 +181,63 @@ body{
 
 footer p, footer fieldset{
     font-size: 40px;
+}
+
+#gridbox-h2 {
+    /* Fonts */
+    font-family: "Lucida Console", "Courier New", monospace;
+
+    /* Long Padding Definitions */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    margin: 10px;
+
+    border: 5px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #FFCD00;
+
+    /* Other Definitions */
+    text-align: center;
+    background-color: hsla(205 83% 30% / 0.62);
+    width: 150px;
+    height: 30px;
+}
+
+img[alt="Kuchipatchi1"] {
+    opacity: 0.1;
+}
+
+.descendant-test div p {
+    color: red;
+}
+
+.descendant-test > p {
+    color: #FFCD00;
+}
+
+.descendant-test + p {
+    color: blue;
+}
+
+.first-p ~ p {
+    color: green;
+}
+
+p.combination {
+    color: #FFCD00;
+}
+
+.has-child:has(+ p) {
+    color: red;
+}
+
+.nesting-test {
+    color: blue;
+    & + p {
+        color: green;
+    }
 }

@@ -13,16 +13,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
-    <style>
-        i {
-            background-color: color(srgb 1 1 0);
-        }
-
-        b {
-            background-color: color-mix(in srgb, red, #000000);
-        }
-    </style>
   </head>
   <body>
     <header>
@@ -132,6 +122,94 @@
             <h4>Audio Clip From the Fight (AUDIO WARNING LOUD):</h4>
             <audio controls muted src="monkey2-75003.mp3"></audio>
         </section>
+
+        <h2 id="flexbox-h2" class="longbox">Flexbox Usage</h2>
+
+        <section class="flexbox">
+            <h3>Flexbox Number 1</h3>
+
+            <p>This is a little paragraph just to fill some white space.</p>
+
+            <h5 style="text-decoration: underline;">Character Number 1</h5>
+
+            <img 
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQybcHuBzexrF2Ho32zVcFNQxLirdkJ298IeA&s" 
+              alt="Miffy 1"
+              width="100"
+            />
+
+            <h5 style="text-decoration: underline;">Thoughts</h5>
+
+            <ul class="list-percent">
+                <li>I love Miffy so much</li>
+            </ul>
+        </section>
+
+        <h2 id="gridbox-h2">Gridbox Usage</h2>
+
+        <section class="gridbox">
+
+            <img 
+              class="k1"
+              src="https://msclaw25.com/cdn/shop/files/20240126_122323.jpg?v=1706372124&width=1445"
+              alt="Kuchipatchi1"
+              width="200"
+            />
+
+            <img 
+              class="k2"
+              src="https://fuzzy-n-chic.com/cdn/shop/products/Kuchipatchi-Plush-Tamagotchi-Cover-Holder-Fuzzy-N-Chic-982.jpg?v=1673664886&width=1946"
+              alt="Kuchipatchi2"
+              width="200"
+            />
+
+            <img 
+              class="k3"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe40EJi0OrLhaY0bbz6BhUnZcgHCD36EoIWw&s"
+              alt="Kuchipatchi3"
+              width="200"
+            />
+
+            <img 
+              class="k4"
+              src="https://media.entertainmentearth.com/assets/images/9a994e807c854971b9e64d4b8c621289xl.jpg"
+              alt="Kuchipatchi4"
+              width="200"
+            />
+
+        </section>
+
+        <h2 class="longbox">Descendants Usage</h2>
+
+        <section class="descendant-test">
+            <div>
+                <p>This text should be red.</p>
+            </div>
+            <p>This text should be default yellow.</p>
+            <section>
+                <p>This text should be default black.</p>
+            </section>
+        </section>
+
+        <p class="first-p">This text is right after the section and should be blue!</p>
+
+        <p>These sentences after the first p should turn awesome green!</p>
+
+        <p>Green!!!</p>
+
+        <section>
+            <p class="combination">This text should be yellow also.</p>
+        </section>
+
+        <div>
+            <p class="has-child">This should turn red because it precedes a p</p>
+            <p>Default black text!</p>
+        </div>
+
+        <div>
+            <p class="nesting-test">This should be blue and the next line should be green.</p>
+            <p>This should be green.</p>
+        </div>
 
     </main>
 
